@@ -1,0 +1,107 @@
+header {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    padding-right: 20px;
+    align-items: center;
+    /* background: rgba(10, 10, 10, 0.9); */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+    margin-top: 8PX;
+    
+}
+
+.menu {
+    
+    
+    list-style: none;
+    position: fixed;
+    padding: 0;
+    display: flex;
+    /* justify-content: flex-end; */
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    padding-right: 50px;
+    justify-content: center;
+    left: 99px;
+    /* background-color: beige; */
+    /* width: 100%; */
+    
+}
+
+.menu > li > a {
+    color: #620ab4;
+    text-decoration: none;
+   position: relative;
+   
+
+}
+.menu > li > a::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: #4d2871;
+    transition: 0.3s ease-in-out;
+    bottom: -5px;
+    left: 0;
+}
+.menu > li > a:hover::before{
+    width: 100%;
+}
+@media  (min-width: 768px){
+    
+    header {
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 20px;
+        padding-right: 20px;
+        align-items: center;
+        /* background: rgba(10, 10, 10, 0.9); */
+        position: fixed;
+        width: 100%;
+        top: 0;
+        right: 00;
+        
+        margin-top: -10PX;
+    }
+    
+    .menu {
+        
+        list-style: none;
+        position: fixed;
+        padding: 0;
+        display: flex;
+        /* justify-content: flex-end; */
+        gap: 20px;
+        align-items: center;
+        text-align: center;
+        /* padding-right: 50px; */
+        justify-content: center;
+        left: 90px;
+        /* background-color: beige; */
+        /* width: 100%; */
+        
+    }
+    @media  (min-width: 992px){
+        header {
+            display: flex;
+            justify-content: space-evenly;
+            padding-top: 20px;
+            padding-right: 20px;
+            align-items: center;
+            /* background: rgba(10, 10, 10, 0.9); */
+            position: fixed;
+            width: 100%;
+            top: 0;
+            right: 00;
+            
+            margin-top: -10PX;
+        }
+        
+    }
+}
+

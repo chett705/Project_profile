@@ -1,0 +1,459 @@
+/* Global Styles */
+.container > main {
+    width: 100%;
+    z-index: 0;
+}
+
+.container > main > .hero {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30;
+   
+}
+
+/* Image User & Content Text --------------------------------------------*/
+.container > main > .hero > .image-user,
+.container > main > .hero > .content-text {
+    width: 100%;
+}
+
+/* Image User Section ----------------------------------------------*/
+.container > main > .hero > .image-user {
+    width: 100%;
+    display: grid;
+    place-content: center;
+    padding: 30px;
+}
+
+.container > main > .hero > .image-user .profile {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: sienna;
+    position: relative;
+}
+
+.container > main > .hero > .image-user .profile::before {
+    content: "";
+    position: absolute;
+    width: 105%;
+    height: 105%;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 4px solid rgb(81, 148, 163);
+    z-index: -1;
+}
+
+.container > main > .hero > .image-user .profile > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Content Text Section------------------------------------- */
+.container > main > .hero > .content-text {
+    width: 100%;
+    text-align: center;
+}
+
+.container > main > .hero > .content-text .text > h1 {
+    font-weight: 600;
+    font-size: clamp(32px, 4vw, 60px);
+}
+
+.container > main > .hero > .content-text .text > p {
+    font-size: clamp(15px, 2vw, 22px);
+    padding: 10px 15px;
+}
+/* -------------------------------------------------------------------------------- */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.image-user {
+    flex: 1;
+    text-align: center;
+}
+
+.profile img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.content-text {
+    flex: 2;
+    padding-left: 40px;
+}
+
+.content-text .text {
+    width: 100%;
+    text-align: center;
+}
+
+.content-text .text h1 {
+    font-weight: 600;
+    font-size: clamp(32px, 4vw, 60px);
+}
+
+.content-text .text p {
+    font-size: clamp(15px, 2vw, 22px);
+    padding: 10px 15px;
+}
+
+.content-text .text button {
+    padding: 8px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 2px solid rgb(81, 148, 163);
+    background-color: transparent;
+    border-radius: 5px;
+    position: relative;
+    transition: 0.3s ease-in-out;
+}
+
+.content-text .text button::before {
+    content: " ";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: rgb(81, 148, 163);
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.4s ease-in-out;
+    border-radius: 0 50px 50px 0px;
+}
+
+.content-text .text button:hover::before {
+    width: 100%;
+    border-radius: 0;
+}
+
+.content-text .text button:hover {
+    color: white;
+}
+main> .exp{
+    width: 100%;
+    background-color: rgb(171, 169, 169);
+    margin-top: 15px;
+    padding:25px 20px ;
+    border-radius: 20px;
+}
+main > .exp > p{
+    text-align: center;
+    padding-bottom: 18px;
+}
+.row{
+    width: 100%;
+   
+}
+.container > main > .exp > .row > .card {
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 20px;
+}
+
+.container > main > .exp > .row > .card > .title-card {
+    font-size: clamp(20px, 3vw, 30px);
+    font-weight: 600;
+    
+}
+
+.container > main > .exp > .row > .card > .year {
+    padding: 18px 0;
+}
+
+.container > main > .exp > .row > .card > .year > span:nth-child(1) {
+    background-color: rgb(81, 148, 163);
+    color: rgb(106, 92, 92);
+    padding: 2px 20px;
+    border-radius: 20px;
+}
+
+.container > main > .exp > .row > .card > .des {
+    color: rg   b(108, 108, 109);
+    overflow: hidden;
+   display: -webkit-box;
+   -webkit-line-clamp: 3; /* number of lines to show */
+           line-clamp: 3; 
+   -webkit-box-orient: vertical;
+}
+/* ---------------- Feature Content ---------------- */
+
+.container > main > .feature {
+    width: 100%;
+    padding: 15px 20px;
+    /* background-color: aquamarine; */
+}
+
+.container > main > .feature > .row {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* background-color: azure; */
+}
+
+.container > main > .feature > .row > p {
+    text-align: center;
+    padding-bottom: 18px;
+    font-size: clamp(18px, 2vw, 20px);
+}
+
+.container > main > .feature > .row > .card {
+    width: 100%;
+    border-bottom: 2px solid gainsboro;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.container > main > .feature > .row > .card > .image {
+    width: 100%;
+    height: 200px;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container > main > .feature > .row > .card > .image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.container > main > .feature > .row > .card > .card-body > .title-card {
+    font-size: clamp(26px, 2vw, 30px);
+    font-weight: 500;
+    margin: 5px 0;
+    padding: 0 10px;
+}
+
+.container > main > .feature > .row > .card > .card-body > .des {
+    color: rgb(108, 108, 109);
+    padding-top: 5px;
+    font-size: 1rem;
+    line-height: 1.4;
+    padding: 0 10px;
+}
+
+
+
+/* Responsive Design --------------------------------------------------*/
+
+/* Tablet View */
+@media (min-width: 768px) {
+    .container > main > .hero > .image-user {
+        width: 45%;
+        height: 100%;
+    }
+    
+    .container > main > .hero {
+        padding: var(--padding-md);
+    }
+
+    .container > main > .hero > .image-user .profile {
+        width: 200px;
+        height: 200px;
+    }
+
+    .container > main > .hero > .content-text {
+        width: 55%;
+        height: 100%;
+        padding: 20px 0;
+        text-align: left;
+        
+    }
+    .row{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    main> .exp{
+        width: 100%;
+        /* background-color: rgb(180, 180, 180); */
+        margin-top: 15px;
+        padding:25px 20px ;
+        
+    }
+    main > .exp > p{
+        text-align: center;
+        padding-bottom: 18px;
+    }
+    .row{
+        width: 100%;
+       
+    }
+    .container > main > .exp > .row > .card {
+        width: 100%;
+        background-color: white;
+        border-radius: 8px;
+        /* margin-bottom: 15px; */
+        padding: 20px;
+        margin: 0px 4px;
+    }
+    
+    .container > main > .exp > .row > .card > .title-card {
+        font-size: clamp(20px, 3vw, 30px);
+        font-weight: 600;
+        
+    }
+    
+    .container > main > .exp > .row > .card > .year {
+        padding: 15px 0;
+    }
+    
+    .container > main > .exp > .row > .card > .year > span:nth-child(1) {
+        background-color: rgb(81, 148, 163);
+        color: rgb(106, 92, 92);
+        padding: 2px 20px;
+        border-radius: 20px;
+    }
+    
+    .container > main > .exp > .row > .card > .des {
+        color: rgb(108, 108, 109);
+        overflow: hidden;
+   display: -webkit-box;
+   -webkit-line-clamp: 4; /* number of lines to show */
+           line-clamp: 4; 
+   -webkit-box-orient: vertical;
+    }
+    main > .feature{
+        padding: var(--padding-md);
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: flex;
+    }
+ main > .feature > .row > .card {
+    display: flex;
+    }
+    main > .feature > .row > .card > .image {
+        width: 40%;
+        height: 210px;
+        margin-right: 10px;
+        
+    }
+    main > .feature > .row > .card > .card-body {
+        width: 170%;
+    }
+    main > .feature > .row > .card > .card-body > .title-card {
+        font-size: clamp(20px, 2vw, 30px);
+        text-align: left;
+    }
+
+}
+
+/* ---------------------------------------------------- */
+
+/* Laptop/Desktop View */
+@media (min-width: 992px) {
+    .container > main > .hero {
+        padding: var(--padding-lg);
+        display: flex;
+        align-items: center;
+    }
+
+    .container > main > .hero > .image-user {
+        padding: 120px;
+    }
+
+    .container > main > .hero > .image-user .profile {
+        width: 410px;
+        height: 410px;
+    }
+
+    .container > main > .hero > .content-text {
+        padding: 120px 20px;
+    }
+
+    .container > main > .hero > .content-text .text > h1 {
+        line-height: 72px;
+    }
+
+    .container > main > .hero > .content-text .text > p {
+        padding: 20px 0;
+    }
+    main> .exp{
+        width: 100%;
+        /* background-color: rgb(180, 180, 180); */
+        margin-top: 15px;
+        padding:25px 20px ;
+    }
+    main > .exp > p{
+        text-align: center;
+        padding-bottom: 18px;
+    }
+    .row{
+        width: 100%;
+       
+    }
+    .container > main > .exp > .row > .card {
+        width: 100%;
+        background-color: white;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        padding: 20px;
+    }
+    
+    .container > main > .exp > .row > .card > .title-card {
+        font-size: clamp(20px, 3vw, 30px);
+        font-weight: 600;
+        
+    }
+    
+    .container > main > .exp > .row > .card > .year {
+        padding: 18px 0;
+    }
+    
+    .container > main > .exp > .row > .card > .year > span:nth-child(1) {
+        background-color: rgb(81, 148, 163);
+        color: rgb(106, 92, 92);
+        padding: 2px 20px;
+        border-radius: 20px;
+    }
+    
+    .container > main > .exp > .row > .card > .des {
+        color: rgb(108, 108, 109);
+        overflow: block;
+       
+       
+    }
+    main > .feature{
+        padding: var(--padding-lg);
+        padding-top: 20px;
+        padding-bottom: 20px;
+        /* padding-left: 0px; */
+        
+    }
+    main > .feature > .row > .card >.image{
+        width: 20%;
+        height: 200px;
+        margin-right: 20px;
+    }
+    main > .feature > .row > .card > .card-body{
+        width: 170%;
+    }
+    
+
+
+
+}
